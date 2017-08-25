@@ -41,6 +41,10 @@ h2 {
     margin-top: 10px;
     margin-bottom: 30px; }
 
+#map {
+  width: 280px;
+  height: 250px; }
+
 .contact-nav {
   background-color: #149b59;
   color: #fff; }
@@ -100,6 +104,48 @@ nav {
   nav .active {
     color: #149b59;
     border-bottom: 5px solid #149b59; }
+
+footer {
+  background-color: #191919;
+  padding: 55px 0 30px 0; }
+  footer .container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  footer h3 {
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 40px; }
+  footer i {
+    color: #149b59;
+    margin-right: 10px; }
+  footer p {
+    color: #888;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    font-weight: 500;
+    line-height: 22px;
+    margin-left: 8px;
+    display: inline-table; }
+    footer p:hover {
+      color: #fff;
+      text-decoration: underline; }
+  footer li {
+    margin-bottom: 12px; }
+
+.bottom-footer {
+  background-color: #0f0f0f;
+  padding: 20px 0;
+  color: #888;
+  text-align: center;
+  font-size: 12px; }
 
 .about-us {
   padding: 70px 0;

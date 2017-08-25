@@ -12,7 +12,7 @@
 	  <link rel="stylesheet" type="text/css" href="css/style.css">
 
 	  <!-- google font -->
-	  <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700" rel="stylesheet">
 
 	</head>
 	<body>
@@ -92,13 +92,73 @@
 		</section>
 
 		<footer>
+			<div class="container">
+				<div class="row">
+					<a href="javascript:;"><img src="img/footer-logo.png" alt="dd-komerc logo"></a>
+				</div>
+				<div class="row">
+					<h3>Kontaktirajte nas</h3>
+					<ul>
+						<li><i class="fa fa-map-marker" aria-hidden="true"></i>
+						<p>Marka Aurelija 134a,<br> 22000 Sremska Mitrovica</p></li>
+						<li><i class="fa fa-phone" aria-hidden="true"></i><p>022/651-677</p></li>
+						<li><i class="fa fa-phone" aria-hidden="true"></i><p>022/651-555</p></li>
+					</ul>
+				</div>
 
+				<div class="row">
+					<h3>Radno vreme</h3>
+					<ul>
+						<li>
+							<i class="fa fa-clock-o" aria-hidden="true"></i><p>ponedeljak - petak: 08-16h</p>
+						</li>
+
+						<li>
+							<i class="fa fa-clock-o" aria-hidden="true"></i><p>subota: 08-14h</p>
+						</li>
+
+						<li>
+							<i class="fa fa-clock-o" aria-hidden="true"></i><p>nedelja: ne radimo</p>
+						</li>
+					</ul>
+				</div>
+
+				<div class="row">
+					<h3>Gde se nalazimo?</h3>
+					<div id="map"></div>
+				</div>
+			</div>
 
 		</footer>
+
+		<div class="bottom-footer">
+			<div class="container">
+				<span>&copy; 2017 Stovarište građevinskog materijala DD Komerc | Sva prava zadržana.</span>
+			</div>
+		</div>
 
 
 		<script type="text/javascript" src="js/jquery.min.js"></script>
 		<script src="js/slippry.js"></script>
 		<script src="js/app.js"></script>
+
+		<script type="text/javascript">
+			function initMap() {
+				var location = {lat: 44.970643, lng: 19.636793};
+				var map = new google.maps.Map(document.getElementById("map"), {
+					zoom: 17,
+					center: location
+				});
+
+				var marker = new google.maps.Marker({
+					position: location,
+					map: map
+				});
+			}
+		</script>
+
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvwGJ_WbT0dUbGMQa3R8QZubIEykTT4mU&callback=initMap">
+
+		</script>
 	</body>
 </html>
