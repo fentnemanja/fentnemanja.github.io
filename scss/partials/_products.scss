@@ -1,0 +1,76 @@
+.products {
+  padding: 70px 0;
+  h2 {
+    text-align: center;
+    &:after {
+      margin: 0 auto;
+      margin-top: 10px;
+    }
+  }
+
+  .podnaslov {
+    text-align: center;
+    font-style: italic;
+    margin: 18px 0;
+    color: #888;
+    line-height: 26px;
+  }
+
+  .flex-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .proizvod {
+      margin-left: 100px;
+      margin-bottom: 30px;
+      margin-top: 20px;
+      transition: all 0.3s;
+      &:last-child {
+        margin-right: 0;
+      }
+      &:hover {
+        transform: scale(1.08);
+      }
+    }
+
+  }
+
+  .slika-proizvoda {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 240px;
+    height: 150px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+
+  }
+
+  .naziv-proizvoda {
+    background-color: $dark-green;
+    text-align: center;
+    color: $white;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 15px 0;
+  }
+
+  .jos-proizvoda {
+    border-left: 1px solid $light-gray;
+    border-right: 1px solid $light-gray;
+    border-bottom: 1px solid $light-gray;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    color: $light-gray;
+    background-color: $white;
+    text-align: center;
+    ul {
+      padding: 20px 10px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+  }
+}

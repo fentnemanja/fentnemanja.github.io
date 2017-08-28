@@ -1,0 +1,20 @@
+.saradnici {
+  padding: 70px 0;
+  background-color: #f7f7f7;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    &:after {
+      margin: 0 auto;
+      margin-top: 10px;
+    }
+  }
+
+  .logos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+}
