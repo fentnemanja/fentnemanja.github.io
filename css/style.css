@@ -251,7 +251,10 @@ footer {
     font-weight: 500;
     line-height: 22px;
     margin-left: 8px;
-    display: inline-table; }
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex; }
     footer p:hover {
       color: #fff;
       text-decoration: underline; }
@@ -601,3 +604,8 @@ footer {
       padding: 20px 10px; }
     .products .jos-proizvoda li {
       margin-bottom: 8px; }
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    .products .flex-wrapper .proizvod {
+      margin-left: 0; }
+    .products .slika-proizvoda {
+      width: 300px; } }
