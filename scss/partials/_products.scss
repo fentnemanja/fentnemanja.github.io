@@ -73,4 +73,17 @@
       margin-bottom: 8px;
     }
   }
+
+  @include mediaquery(320px, 767px) {
+    .flex-wrapper {
+      .proizvod {
+        margin-left: inherit;
+      }
+    }
+
+    .slika-proizvoda {
+      width: 300px;
+    }
+
+  }
 }
