@@ -346,7 +346,8 @@ footer {
       width: 70%; } }
   @media screen and (min-width: 320px) and (max-width: 767px) {
     .about-us {
-      padding: 40px 0; }
+      padding: 40px 0;
+      padding-top: 100px; }
       .about-us .left-side {
         width: 70%; }
       .about-us .right-side {
@@ -543,7 +544,8 @@ footer {
       height: 65px; } }
 
 .products {
-  padding: 70px 0; }
+  padding: 70px 0;
+  padding-top: 100px; }
   .products h2 {
     text-align: center; }
     .products h2:after {
