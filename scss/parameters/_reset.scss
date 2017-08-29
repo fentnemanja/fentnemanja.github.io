@@ -32,6 +32,26 @@ li {
     text-align: center;
     background-color: inherit;
   }
+
+  @include mediaquery(768px, 1023px) {
+		bottom: 2em;
+    .sy-caption {
+      font-size: 26px;
+    }
+	}
+
+  @include mediaquery(320px, 767px) {
+		bottom: 0em;
+    .sy-caption {
+      font-size: 20px;
+    }
+	}
+}
+
+@include mediaquery(320px, 767px) {
+  .sy-box {
+    display: none;
+  }
 }
 
 h2 {

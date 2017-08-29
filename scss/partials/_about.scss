@@ -50,5 +50,49 @@
     margin-top: 40px;
   }
 
+  	@include mediaquery(768px, 1023px) {
+      .left-side {
+        width: 25%;
+      }
 
+      .right-side {
+        width: 70%;
+      }
+    }
+
+    @include mediaquery(320px, 767px) {
+      padding: 40px 0;
+      .left-side {
+        width: 70%;
+      }
+
+      .right-side {
+        width: 95%;
+        margin-left: inherit;
+        text-align: center;
+        margin-top: 40px;
+        p {
+          font-size: 16px;
+          line-height: 30px;
+        }
+      }
+
+      .about-us-content {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+}
+
+.kreditiranje {
+  color: $white;
+  text-align: center;
+  padding: 50px 0;
+  background-color: $light-green;
+
+  h3 {
+    line-height: 26px;
+    text-transform: uppercase;
+    margin: 20px 0 40px 0;
+  }
 }

@@ -40,7 +40,24 @@ footer {
     margin-bottom: 12px;
   }
 
+  @include mediaquery(768px, 1023px) {
+      .container {
+        flex-wrap: wrap;
+      }
+    }
 
+
+  @include mediaquery(320px, 767px) {
+    .container {
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    .row {
+      margin-bottom: 30px;
+    }
+  }
 }
 
 .bottom-footer {

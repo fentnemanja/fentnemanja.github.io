@@ -19,6 +19,10 @@
 		display: inline-block;
 	}
 
+	@include mediaquery(320px, 767px) {
+		display: none;
+	}
+
 }
 
 header {
@@ -26,10 +30,22 @@ header {
 	box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.1);
 	.container {
 		display: flex;
-		justify-content: center;
+		justify-content: space-between;
 		align-items: center;
 		padding-top: 20px;
 		padding-bottom: 20px;
+	}
+
+	@include mediaquery(768px, 1023px) {
+		.logo {
+			width: 220px;
+		}
+	}
+
+	@include mediaquery(320px, 767px) {
+		.logo {
+			width: 180px;
+		}
 	}
 }
 
@@ -61,6 +77,70 @@ nav {
 		color: $dark-green;
 		border-bottom: 5px solid $dark-green;
 	}
+
+	@include mediaquery(768px, 1023px) {
+		top: 134px;
+		padding: 25px 0;
+		z-index: 100;
+		display: none;
+		position: absolute;
+		background-color: $dark-green;
+		width: 100%;
+		margin-left: inherit;
+		left: 0;
+		text-align: center;
+		li {
+			display: block;
+			margin-bottom: 9px;
+			margin-left: inherit;
+			border-bottom: 1px solid $white;
+			padding: 8px 0;
+		}
+
+		a {
+			color: $white;
+			font-size: 18px;
+			&:hover {
+				color: $white;
+			}
+		}
+
+		.active {
+			color: $white;
+		}
+	}
+
+	@include mediaquery(320px, 767px) {
+		top: 74px;
+		padding: 75px 0 25px 0;
+		z-index: 100;
+		display: none;
+		position: absolute;
+		background-color: $dark-green;
+		width: 100%;
+		margin-left: inherit;
+		left: 0;
+		text-align: center;
+		li {
+			display: block;
+			margin-bottom: 9px;
+			margin-left: inherit;
+			border-bottom: 1px solid $white;
+			padding: 8px 0;
+		}
+
+		a {
+			color: $white;
+			font-size: 18px;
+			&:hover {
+				color: $white;
+			}
+		}
+
+		.active {
+			color: $white;
+		}
+	}
 }
 
 .flags {
@@ -89,14 +169,20 @@ nav {
 		border-bottom: 2px solid $dark-green;
 	}
 
-	// img {
-	// 	transition: all 0.3s;
-	// }
-	//
-	// img:hover {
-	// 	border: 2px solid green;
-  //   padding: 4px 8px;
-  //   border-radius: 8px;
-  //   box-sizing: border-box;
-	// }
+	@include mediaquery(768px, 1023px) {
+		margin-right: 60px
+	}
+
+	@include mediaquery(320px, 767px) {
+		img {
+			width: 33px;
+		}
+		display: none;
+		position: absolute;
+    top: 95px;
+    z-index: 1001;
+		left: 50%;
+		margin-left: -60px;
+	}
+
 }
