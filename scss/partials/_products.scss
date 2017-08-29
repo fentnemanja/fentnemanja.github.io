@@ -77,7 +77,7 @@
   @include mediaquery(320px, 767px) {
     .flex-wrapper {
       .proizvod {
-        margin-left: inherit;
+        margin-left: 0;
       }
     }
 
