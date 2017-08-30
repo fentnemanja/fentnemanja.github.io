@@ -10,4 +10,5 @@ $(document).ready(function () {
       $('.flags').stop().slideToggle('medium');
       return $(this).toggleClass('open');
   });
+  
 });
