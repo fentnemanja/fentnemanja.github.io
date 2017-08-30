@@ -38,13 +38,16 @@ header {
 
 	@include mediaquery(768px, 1023px) {
 		.logo {
-			width: 220px;
+			width: 280px;
 		}
 	}
 
 	@include mediaquery(320px, 767px) {
+		position: fixed;
+		width: 100%;
+		z-index: 2000;
 		.logo {
-			width: 180px;
+			width: 200px;
 		}
 	}
 }
@@ -100,14 +103,19 @@ nav {
 		a {
 			color: $white;
 			font-size: 18px;
+			padding: inherit;
 			&:hover {
 				color: $white;
+				border-bottom: 0;
 			}
 		}
 
 		.active {
 			color: $white;
+			border-bottom: 0;
 		}
+
+
 	}
 
 	@include mediaquery(320px, 767px) {
@@ -132,13 +140,22 @@ nav {
 		a {
 			color: $white;
 			font-size: 18px;
+			padding: inherit;
 			&:hover {
 				color: $white;
+				border-bottom: 0;
 			}
 		}
 
 		.active {
 			color: $white;
+			border-bottom: 0;
+		}
+
+		nav {
+			a {
+				padding: inherit;
+			}
 		}
 	}
 }

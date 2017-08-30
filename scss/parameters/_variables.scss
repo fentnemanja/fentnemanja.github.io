@@ -6,6 +6,8 @@ $yellow: #ffcc4f;
 $yellow-light: #ffd366;
 $footer: #191919;
 $light-gray: #888;
+$dark-gray: #6f6f6f;
+$contact-bg: #f7f7f7;
 
 @mixin mediaquery($min, $max) {
     @media screen and (min-width: $min) and (max-width: $max) {
