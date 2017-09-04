@@ -32,7 +32,7 @@
     start: 1, // num (starting from 1), random
     loop: true, // first -> last & last -> first arrows
     captionsSrc: 'img', // img, el [img takes caption from alt or title, el from title of slide element]
-    captions: 'overlay', // Position: overlay, below, custom, false
+    captions: 'false', // Position: overlay, below, custom, false
     captionsEl: '.sy-caption', // $ selector for captions wrapper
     initSingle: true, // initialise even if there is only one slide
     responsive: true,

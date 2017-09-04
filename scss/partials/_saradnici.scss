@@ -15,8 +15,9 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-
-
+    img {
+      margin: 15px 10px;
+    }
   }
 
   @include mediaquery(320px, 767px) {

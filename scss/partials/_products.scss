@@ -23,13 +23,18 @@
     flex-wrap: wrap;
 
     .proizvod {
-      margin-left: 100px;
+      margin-left: 35px;
       margin-bottom: 30px;
       margin-top: 20px;
       transition: all 0.3s;
       &:last-child {
         margin-right: 0;
       }
+
+      &:first-child {
+        margin-left: 0;
+      }
+      
       &:hover {
         transform: scale(1.08);
       }

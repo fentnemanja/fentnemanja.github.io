@@ -1,6 +1,12 @@
 .contact-nav {
 	background-color: $dark-green;
 	color: $white;
+
+	.container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
 	p {
 		display: inline-block;
 		padding: 18px 10px;
@@ -9,14 +15,15 @@
 		&:hover {
 			text-decoration: underline;
 		}
-
 	}
 
-	.line-separator {
-		width: 1px;
-		height: 100%;
-		background-color: $white;
-		display: inline-block;
+	.right-side {
+		img {
+			height: 25px;
+		}
+		a {
+			margin-left: 20px;
+		}
 	}
 
 	@include mediaquery(320px, 767px) {

@@ -23,6 +23,18 @@ footer {
     margin-right: 10px;
   }
 
+  .drustvene {
+    display: block;
+    color: $white;
+    margin-top: 25px;
+    margin-bottom: 15px;
+
+  }
+
+  .drustvene + a {
+    margin-right: 25px;
+  }
+
   p {
     color: #888;
     transition: all 0.3s;
