@@ -19,7 +19,7 @@ li {
   z-index: 100; }
 
 .container {
-  max-width: 1140px;
+  max-width: 1200px;
   width: 100%;
   padding: 0 15px;
   margin: 0 auto; }
@@ -269,6 +269,9 @@ footer {
     color: #fff;
     font-weight: 300;
     margin-bottom: 40px; }
+  footer .fa-mobile {
+    font-size: 22px;
+    margin-right: 12px; }
   footer i {
     color: #149b59;
     margin-right: 10px; }
@@ -405,7 +408,7 @@ footer {
   color: #fff;
   text-align: center;
   padding: 50px 0;
-  background-color: #6caf36; }
+  background-color: #149b59; }
   .kreditiranje h3 {
     line-height: 26px;
     text-transform: uppercase;
@@ -454,7 +457,7 @@ footer {
   transition: all 0.3s; }
   .kontakt:hover {
     background-color: #fff;
-    color: #6caf36; }
+    color: #149b59; }
 
 .btn-forma {
   text-transform: uppercase;
@@ -620,16 +623,10 @@ footer {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap; }
     .products .flex-wrapper .proizvod {
-      margin-left: 35px;
-      margin-bottom: 30px;
-      margin-top: 20px;
+      margin: 20px 18px 30px 18px;
       -webkit-transition: all 0.3s;
       -o-transition: all 0.3s;
       transition: all 0.3s; }
-      .products .flex-wrapper .proizvod:last-child {
-        margin-right: 0; }
-      .products .flex-wrapper .proizvod:first-child {
-        margin-left: 0; }
       .products .flex-wrapper .proizvod:hover {
         -webkit-transform: scale(1.08);
             -ms-transform: scale(1.08);
@@ -658,7 +655,8 @@ footer {
     color: #6f6f6f;
     font-size: 15px;
     background-color: #fff;
-    text-align: center; }
+    text-align: center;
+    height: 275px; }
     .products .jos-proizvoda ul {
       padding: 20px 10px; }
     .products .jos-proizvoda li {
@@ -706,6 +704,9 @@ footer {
     .contact .left-side i {
       color: #149b59;
       margin-right: 15px; }
+    .contact .left-side .fa-mobile {
+      font-size: 22px;
+      margin-right: 18px; }
   .contact .right-side {
     width: 50%; }
   .contact .posaljite {
