@@ -1,0 +1,99 @@
+.team {
+  padding: 70px 0;
+  padding-top: 100px;
+  .flex-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .right-side {
+    p {
+      display: inline-block;
+      font-weight: 800;
+      font-size: 18px;
+      color: $light-gray;
+      margin-left: 30px;
+      text-align: center;
+      line-height: 32px;
+    }
+  }
+
+
+}
+
+.zaposlenje {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 50px;
+  padding-bottom: 120px;
+
+  .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  h3 {
+    text-align: center;
+    color: $white;
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-bottom: 25px;
+  }
+
+  .text-posao {
+    text-align: center;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: $white;
+  }
+
+  .highlight {
+    font-weight: 800;
+  }
+
+  .bottom {
+    text-decoration: underline;
+  }
+
+  .flex-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .mesto {
+    color: $white;
+    margin: 75px 30px;
+    p {
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      margin-left: 18px;
+    }
+    li {
+      list-style: disc;
+      margin-bottom: 13px;
+    }
+
+  }
+
+  .more-info {
+    color: $white;
+    border: 1px solid $white;
+    padding: 18px 22px;
+    border-radius: 5px;
+
+    a {
+      color: $white;
+      font-weight: 800;
+    }
+  }
+}

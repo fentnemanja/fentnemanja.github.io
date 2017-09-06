@@ -815,3 +815,163 @@ footer {
   padding: 20px 15px;
   background-color: rgba(0, 0, 0, 0.51);
   border-radius: 8px; }
+
+.our-team {
+  padding-top: 70px; }
+  .our-team .container {
+    padding: 0 85px; }
+  .our-team h2 {
+    text-align: center;
+    margin-bottom: 80px; }
+    .our-team h2:after {
+      margin: 0 auto;
+      margin-top: 10px; }
+  .our-team .osoblje {
+    font-size: 16px;
+    text-align: center;
+    color: #888;
+    line-height: 27px;
+    margin-bottom: 55px; }
+  .our-team .left-side .container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .our-team .right-side {
+    color: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    .our-team .right-side .container {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+    .our-team .right-side h3 {
+      font-size: 27px;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 30px; }
+    .our-team .right-side .text-posao {
+      text-align: center;
+      margin-bottom: 8px;
+      font-size: 14px;
+      color: #fff; }
+    .our-team .right-side .highlight {
+      font-weight: 800; }
+    .our-team .right-side .bottom {
+      text-decoration: underline; }
+    .our-team .right-side .mesto {
+      margin-top: 60px; }
+      .our-team .right-side .mesto p {
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 16px;
+        margin-bottom: 15px; }
+      .our-team .right-side .mesto ul {
+        margin-left: 18px; }
+      .our-team .right-side .mesto li {
+        list-style: disc;
+        margin-bottom: 13px; }
+    .our-team .right-side .flex-wrapper {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+  .our-team .more-info {
+    margin-top: 60px;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 18px 22px;
+    border-radius: 5px; }
+    .our-team .more-info a {
+      color: #fff;
+      font-weight: 800; }
+  .our-team .flex-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+  .our-team .left-side,
+  .our-team .right-side {
+    width: 50%;
+    padding: 60px 0; }
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    .our-team h2 {
+      padding-top: 50px;
+      margin-bottom: 25px; }
+    .our-team .flex-wrapper {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+    .our-team .left-side,
+    .our-team .right-side {
+      width: 100%;
+      padding: 20px 0; }
+    .our-team .left-side img {
+      height: 245px; }
+    .our-team .container {
+      padding: 0 15px; }
+    .our-team .osoblje {
+      line-height: 30px;
+      margin-bottom: 30px; }
+    .our-team .right-side h3 {
+      font-size: 24px;
+      margin-top: 30px; }
+    .our-team .right-side .text-posao {
+      font-size: 15px;
+      line-height: 25px; }
+    .our-team .more-info {
+      margin-bottom: 60px;
+      font-size: 15px; } }
+
+.vozila {
+  margin-top: 70px; }
+  .vozila h2 {
+    text-align: center;
+    margin-bottom: 40px; }
+    .vozila h2:after {
+      margin: 0 auto;
+      margin-top: 10px; }
+  .vozila .vozni-park {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 800;
+    color: #888;
+    line-height: 26px;
+    margin-bottom: 100px; }
+  .vozila .gallery {
+    margin-bottom: 60px; }
