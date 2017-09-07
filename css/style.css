@@ -591,7 +591,14 @@ footer {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap; }
     .saradnici .logos img {
-      margin: 15px 10px; }
+      margin: 15px 10px;
+      -webkit-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s; }
+      .saradnici .logos img:hover {
+        -webkit-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+                transform: scale(1.2); }
   @media screen and (min-width: 320px) and (max-width: 767px) {
     .saradnici .logos img {
       height: 65px; } }
@@ -662,8 +669,6 @@ footer {
     .products .jos-proizvoda li {
       margin-bottom: 8px; }
   @media screen and (min-width: 320px) and (max-width: 767px) {
-    .products .flex-wrapper .proizvod {
-      margin-left: 0; }
     .products .slika-proizvoda {
       width: 300px; } }
 
@@ -771,18 +776,15 @@ footer {
 #slippry-demo .first-slider {
   position: absolute;
   z-index: 100;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  top: 51%;
+  left: 32%;
   font-size: 30px;
   font-weight: 700;
   text-transform: uppercase;
   color: #fff;
   text-align: center;
   line-height: 38px;
-  padding: 20px 0;
+  padding: 20px 15px;
   background-color: rgba(0, 0, 0, 0.51);
   border-radius: 8px; }
 
@@ -791,6 +793,21 @@ footer {
   z-index: 100;
   top: 40%;
   left: 58%;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  line-height: 38px;
+  padding: 20px 15px;
+  background-color: rgba(0, 0, 0, 0.51);
+  border-radius: 8px; }
+
+#slippry-demo .fourth-slider {
+  position: absolute;
+  z-index: 100;
+  top: 40%;
+  left: 48%;
   font-size: 30px;
   font-weight: 700;
   text-transform: uppercase;
@@ -959,7 +976,7 @@ footer {
       font-size: 15px; } }
 
 .vozila {
-  margin-top: 70px; }
+  padding-top: 70px; }
   .vozila h2 {
     text-align: center;
     margin-bottom: 40px; }
@@ -967,11 +984,33 @@ footer {
       margin: 0 auto;
       margin-top: 10px; }
   .vozila .vozni-park {
-    text-align: center;
+    text-align: left;
     font-size: 15px;
-    font-weight: 800;
-    color: #888;
-    line-height: 26px;
-    margin-bottom: 100px; }
+    line-height: 27px;
+    margin-top: 10px; }
+    .vozila .vozni-park:first-child {
+      margin-top: 0; }
   .vozila .gallery {
-    margin-bottom: 60px; }
+    margin: 100px 0; }
+  .vozila .bitno {
+    font-weight: 500; }
+  .vozila ul {
+    width: 80%;
+    margin-left: 40px;
+    margin-top: 10px; }
+  .vozila li {
+    list-style: disc; }
+  .vozila .besplatan-prevoz {
+    font-weight: 500;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: underline; }
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    .vozila h2 {
+      padding-top: 70px; } }
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .container .gallery a img {
+    width: 50%; }
+  .container .gallery a.big img {
+    width: 100%; } }

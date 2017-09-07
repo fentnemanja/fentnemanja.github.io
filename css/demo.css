@@ -59,6 +59,10 @@ a {
   width: 40%;
 }
 
+.container .gallery a.bigger img {
+  width: 100%;
+}
+
 /* line 65, ../sass/demo.scss */
 .align-center {
   text-align: center;
