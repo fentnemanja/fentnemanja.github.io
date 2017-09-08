@@ -4,7 +4,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
-		<title>DD Komerc</title>
+		<title>DD Komerc - Građevinski materijali</title>
 
 		<!-- css  -->
 		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
@@ -63,19 +63,19 @@
 
 		<ul id="slippry-demo">
 		  <li>
-		    <a href="#slide1"><img src="img/slide4.jpg" alt="Maloprodaja i veleprodaja građevinskog materijala"></a>
+		    <a href="#slide1"><img src="img/slider/slide1.jpg" alt="Maloprodaja i veleprodaja građevinskog materijala"></a>
 				<p class="first-slider">Maloprodaja i veleprodaja<br> građevinskog materijala</p>
 		  </li>
 			<li>
-		    <a href="#slide2"><img src="img/slide5.jpg"  alt="Najkvalitetniji brendovi"></a>
+		    <a href="#slide2"><img src="img/slider/slide2.jpg"  alt="Najkvalitetniji brendovi"></a>
 				<p class="fourth-slider">Pouzdanost, kvalitet i duga tradicija<br>su ono što nas karakteriše</p>
 		  </li>
 		  <li>
-		    <a href="#slide2"><img src="img/slide2.jpg"  alt="Najkvalitetniji brendovi"></a>
+		    <a href="#slide2"><img src="img/slider/slide3.jpg"  alt="Najkvalitetniji brendovi"></a>
 				<p class="second-slider">Najkvalitetniji brendovi</p>
 		  </li>
 			<li>
-		    <a href="#slide3"><img src="img/slide3.jpg"  alt="Poštovanje rokova, stručnost i kvalitet"></a>
+		    <a href="#slide3"><img src="img/slider/slide4.jpg"  alt="Poštovanje rokova, stručnost i kvalitet"></a>
 				<p class="third-slider">Poštovanje rokova,<br> stručnost i kvalitet</p>
 		  </li>
 		</ul>
@@ -135,7 +135,7 @@
 		<footer>
 			<div class="container">
 				<div class="row">
-					<a href="javascript:;"><img src="img/footer-logo.png" alt="dd-komerc logo"></a>
+					<a href="index.html"><img src="img/footer-logo.png" alt="dd-komerc logo"></a>
 					<span class="drustvene">Zapratite nas na društvenim mrežama</span>
 					<a href="javascript:;"><img src="img/facebook-footer.png" alt="facebook logo"></a>
 					<a href="javascript:;"><img src="img/instagram-footer.png" alt="facebook logo"></a>
@@ -144,10 +144,10 @@
 					<h3>Kontaktirajte nas</h3>
 					<ul>
 						<li><i class="fa fa-map-marker" aria-hidden="true"></i>
-						<p>Marka Aurelija 1,<br> 22000 Sremska Mitrovica<br>Srbija</p></li>
+						<p>Marka Aurelija 1,<br> 22000 Sremska Mitrovica</p></li>
 						<li><i class="fa fa-phone" aria-hidden="true"></i><p>022/610-670</p></li>
 						<li><i class="fa fa-phone" aria-hidden="true"></i><p>022/625-737</p></li>
-						<li><i class="fa fa-mobile" aria-hidden="true"></i><p>062 610 670</p></li>
+						<li><i class="fa fa-mobile" aria-hidden="true"></i><p>062 610-670</p></li>
 						<li><i class="fa fa-fax" aria-hidden="true"></i><p>022/632-941</p></li>
 						<li><i class="fa fa-envelope" aria-hidden="true"></i><p>info@ddkomerc.com</p></li>
 					</ul>
@@ -189,35 +189,8 @@
 		<script src="js/slippry.js"></script>
 		<script src="js/wow.min.js"></script>
 		<script src="js/app.js"></script>
-
-		<script type="text/javascript">
-			function initMap() {
-				var location = {lat: 44.970643, lng: 19.636793};
-				var map = new google.maps.Map(document.getElementById("map"), {
-					zoom: 16,
-					center: location
-				});
-
-				var marker = new google.maps.Marker({
-					position: location,
-					map: map
-				});
-			}
-		</script>
-
-		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvwGJ_WbT0dUbGMQa3R8QZubIEykTT4mU&callback=initMap">
-
-		</script>
-
-		<script>
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-		  ga('create', 'UA-105849845-1', 'auto');
-		  ga('send', 'pageview');
-
-		</script>
+		<script type="text/javascript" src="js/maps.js"></script>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvwGJ_WbT0dUbGMQa3R8QZubIEykTT4mU&callback=initMap"></script>
+		<script type="text/javascript" src="js/analytics.js"></script>
 	</body>
 </html>
