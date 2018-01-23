@@ -1,82 +1,15 @@
 footer {
-  background-color: $footer;
-  padding: 55px 0 30px 0;
-
-  .container {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  h3 {
-    text-transform: uppercase;
-    color: $white;
-    font-weight: 300;
-    margin-bottom: 40px;
-  }
-
-  .fa-mobile {
-    font-size: 22px;
-    margin-right: 12px
-  }
-
-  i {
-    color: $dark-green;
-    margin-right: 10px;
-  }
-
-  .drustvene {
-    display: block;
-    color: $white;
-    margin-top: 25px;
-    margin-bottom: 15px;
-
-  }
-
-  .drustvene + a {
-    margin-right: 25px;
-  }
-
-  p {
-    color: #888;
-    transition: all 0.3s;
-    font-weight: 500;
-    line-height: 22px;
-    margin-left: 8px;
-    display: inline-flex;
-    &:hover {
-      color: $white;
-      text-decoration: underline;
-    }
-  }
-
-  li {
-    margin-bottom: 12px;
-  }
-
-  @include mediaquery(768px, 1023px) {
-      .container {
-        flex-wrap: wrap;
-      }
-    }
-
-
-  @include mediaquery(320px, 767px) {
-    .container {
-      flex-wrap: wrap;
-      flex-direction: column;
-      justify-content: flex-start;
-    }
-
-    .row {
-      margin-bottom: 30px;
-    }
-  }
+    font-size: 14px;
+    text-align: center;
+    background-color: transparent;
+    padding-bottom: 30px;
 }
 
-.bottom-footer {
-  background-color: #0f0f0f;
-  padding: 20px 0;
-  color: #888;
-  text-align: center;
-  font-size: 12px;
+.anim-header {
+    transition-duration: 1.25s;
+    transition-property: transform;
+    transition-delay: .5s;
+    // transition-timing-function: cubic-bezier(.42,0,.58,1);
+    transition-timing-function: cubic-bezier(0,0,.39,.985);
+    transform: translate3d(0,0,0);
 }

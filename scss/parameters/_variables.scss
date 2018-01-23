@@ -1,16 +1,10 @@
-$black: #1b1b1b;
-$dark-green: #149b59;
-$light-green: #6caf36;
-$white: #fff;
-$yellow: #ffcc4f;
-$yellow-light: #ffd366;
-$footer: #191919;
-$light-gray: #888;
-$dark-gray: #6f6f6f;
-$contact-bg: #f7f7f7;
+$blue: #134db6;
+$darkGray: #2b2d31;
+$lightGray: #7f8690;
+$dribbble: #ea4c89;
+$linkedin: #0077B5;
+$background: #f9fafc;
+$green: #16bc98;
+$orange: #f5a623;
+$red: #fe3322;
 
-@mixin mediaquery($min, $max) {
-    @media screen and (min-width: $min) and (max-width: $max) {
-        @content;
-    }
-}

@@ -1,0 +1,20 @@
+.ball-right {
+    @include ball($orange);
+    width: 1100px;
+    height: 1100px;
+    top: -50%;
+    right: -20%;
+}
+
+.bottom-ball-wrapper {
+    position: relative;
+}
+
+.ball-bottom {
+    @include ball($blue);
+    border-bottom-left-radius: 0;
+    left: -25%;
+    bottom: 0;
+    width: 900px;
+    height: 900px;
+}

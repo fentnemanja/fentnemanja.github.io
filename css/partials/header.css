@@ -1,0 +1,23 @@
+.header-flex-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.personal-info,
+.contact-info {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1 1 0%;
+  width: 100%; }
+
+.contact-info {
+  text-align: right; }
+  .contact-info ul {
+    display: inline-block;
+    list-style: none; }

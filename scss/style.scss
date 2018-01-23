@@ -1,12 +1,11 @@
 @import 'parameters/variables';
 @import 'parameters/reset';
 
-// Partials
+
+@import 'mixins/all';
+
 @import 'partials/header';
-@import 'partials/footer';
 @import 'partials/about';
-@import 'partials/btn';
-@import 'partials/saradnici';
-@import 'partials/products';
-@import 'partials/contact';
-@import 'partials/slider';
+@import 'partials/experience';
+@import 'partials/ball';
+@import 'partials/footer';
