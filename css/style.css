@@ -25,6 +25,10 @@ body {
   padding: 0 15px;
   margin: 0 auto; }
 
+@media screen and (min-width: 120px) and (max-width: 720px) {
+  .container {
+    padding: 0 20px; } }
+
 header {
   margin-top: 65px; }
 
@@ -37,17 +41,24 @@ header {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center; }
+  @media screen and (min-width: 120px) and (max-width: 720px) {
+    .header-flex-wrapper {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
 
 .personal-info,
 .contact-info {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1 1 0%;
   width: 100%;
   height: 100%; }
 
 .personal-info {
+  -webkit-box-flex: 2;
+  -webkit-flex: 2;
+      -ms-flex: 2;
+          flex: 2 1 0%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -58,6 +69,14 @@ header {
           align-items: center; }
   .personal-info img {
     height: 180px; }
+  @media screen and (min-width: 120px) and (max-width: 720px) {
+    .personal-info {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      text-align: center; } }
 
 .name-title {
   margin-left: 40px; }
@@ -69,10 +88,22 @@ header {
     color: #134db6; }
   .name-title .position {
     font-size: 17px; }
+  @media screen and (min-width: 120px) and (max-width: 720px) {
+    .name-title {
+      margin-top: 25px;
+      margin-left: 0; }
+      .name-title .position {
+        display: block;
+        margin-top: 5px;
+        font-size: 18px; } }
 
 .contact-info {
   text-align: right;
-  border-right: 2px solid #134db6; }
+  border-right: 2px solid #134db6;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1 1 0%; }
   .contact-info ul {
     display: inline-block;
     list-style: none;
@@ -92,6 +123,23 @@ header {
     color: #0077B5; }
     .contact-info .linkedin:hover {
       text-decoration: underline; }
+  @media screen and (min-width: 120px) and (max-width: 720px) {
+    .contact-info {
+      text-align: center;
+      font-size: 20px;
+      border-right: none;
+      margin-top: 10px; }
+      .contact-info ul {
+        line-height: 29px;
+        padding-left: 0;
+        border-top: 2px solid blue;
+        margin-right: 0;
+        padding-top: 20px; }
+      .contact-info .dribbble,
+      .contact-info .linkedin {
+        display: inline-block;
+        margin-top: 10px;
+        text-decoration: underline; } }
 
 .about {
   margin-top: 80px;
@@ -134,8 +182,11 @@ header {
     bottom: 5px;
     left: 0px;
     opacity: .4;
-    -webkit-animation: 1.7s ease-out 0s 1 slideInFromLeft;
-            animation: 1.7s ease-out 0s 1 slideInFromLeft; }
+    -webkit-animation: 1.7s ease-out 0.5s 1 slideInFromLeft;
+            animation: 1.7s ease-out 0.5s 1 slideInFromLeft; }
+  @media screen and (min-width: 120px) and (max-width: 720px) {
+    .about {
+      margin-top: 60px; } }
 
 .hobby {
   margin-bottom: 60px; }
@@ -152,8 +203,11 @@ header {
     text-transform: uppercase;
     letter-spacing: 4.5px;
     font-weight: 700; }
+    @media screen and (min-width: 120px) and (max-width: 720px) {
+      .experiences .skills {
+        font-size: 20px; } }
   .experiences .sub-title {
-    font-size: 18px;
+    font-size: 19px;
     font-weight: 600;
     display: block; }
   .experiences .date {
@@ -179,6 +233,9 @@ header {
     text-transform: uppercase;
     letter-spacing: 4.5px;
     font-weight: 700; }
+    @media screen and (min-width: 120px) and (max-width: 720px) {
+      .experiences .languages {
+        font-size: 20px; } }
   .experiences .left-side,
   .experiences .right-side {
     -webkit-box-flex: 1;
@@ -200,6 +257,9 @@ header {
     text-transform: uppercase;
     letter-spacing: 4.5px;
     font-weight: 700; }
+    @media screen and (min-width: 120px) and (max-width: 720px) {
+      .experiences .work {
+        font-size: 20px; } }
   .experiences .education {
     margin: 0;
     margin-bottom: 40px;
@@ -208,12 +268,36 @@ header {
     text-transform: uppercase;
     letter-spacing: 4.5px;
     font-weight: 700; }
+    @media screen and (min-width: 120px) and (max-width: 720px) {
+      .experiences .education {
+        font-size: 20px; } }
+  @media screen and (min-width: 120px) and (max-width: 720px) {
+    .experiences {
+      margin-top: 40px; }
+      .experiences .text {
+        font-size: 17px;
+        display: inline-block;
+        line-height: 27px; }
+      .experiences .left-side {
+        border-right: none; }
+      .experiences .right-side {
+        padding-left: 0;
+        padding-right: 40px; }
+      .experiences .contents {
+        padding: 45px 0; } }
 
 .experiences-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
+  @media screen and (min-width: 120px) and (max-width: 720px) {
+    .experiences-wrapper {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
 
 .ball-right {
   position: absolute;
@@ -225,6 +309,12 @@ header {
   height: 1100px;
   top: -50%;
   right: -20%; }
+  @media screen and (min-width: 120px) and (max-width: 720px) {
+    .ball-right {
+      width: 800px;
+      height: 800px;
+      top: 14%;
+      left: -27%; } }
 
 .bottom-ball-wrapper {
   position: relative; }
@@ -240,6 +330,9 @@ header {
   bottom: 0;
   width: 900px;
   height: 900px; }
+  @media screen and (min-width: 120px) and (max-width: 720px) {
+    .ball-bottom {
+      display: none; } }
 
 footer {
   font-size: 14px;
