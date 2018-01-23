@@ -127,13 +127,12 @@ header {
       float: right;
       display: block; }
       .contact-info ul {
-        display: block;
+        display: inline-block;
         line-height: 29px;
         padding-left: 0;
         border-top: 2px solid blue;
         margin-right: 0;
-        padding-top: 20px;
-        background-color: red; }
+        padding-top: 20px; }
       .contact-info .dribbble,
       .contact-info .linkedin {
         display: inline-block;
