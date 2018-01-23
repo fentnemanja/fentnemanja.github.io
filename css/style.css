@@ -311,10 +311,7 @@ header {
   right: -20%; }
   @media screen and (min-width: 120px) and (max-width: 720px) {
     .ball-right {
-      width: 800px;
-      height: 800px;
-      top: 14%;
-      left: -27%; } }
+      display: none; } }
 
 .bottom-ball-wrapper {
   position: relative; }
