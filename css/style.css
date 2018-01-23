@@ -31,6 +31,9 @@ body {
 
 header {
   margin-top: 65px; }
+  @media screen and (min-width: 120px) and (max-width: 720px) {
+    header {
+      margin-top: 30px; } }
 
 .header-flex-wrapper {
   display: -webkit-box;
@@ -71,7 +74,8 @@ header {
     .personal-info {
       display: block;
       float: left;
-      margin: 0 auto; } }
+      margin: 0 auto;
+      text-align: center; } }
 
 .name-title {
   margin-left: 40px; }
