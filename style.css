@@ -39,15 +39,7 @@ header {
   display: flex; }
   @media screen and (min-width: 120px) and (max-width: 720px) {
     .header-flex-wrapper {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      -webkit-box-pack: justify;
-      -webkit-justify-content: space-between;
-          -ms-flex-pack: justify;
-              justify-content: space-between; } }
+      display: block; } }
 
 .personal-info,
 .contact-info {
