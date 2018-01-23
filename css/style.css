@@ -97,7 +97,8 @@ header {
 
 .contact-info {
   text-align: right;
-  border-right: 2px solid #134db6; }
+  border-right: 2px solid #134db6;
+  display: inline-block; }
   .contact-info ul {
     display: inline-block;
     list-style: none;
