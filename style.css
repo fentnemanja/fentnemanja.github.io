@@ -36,10 +36,19 @@ header {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row; }
   @media screen and (min-width: 120px) and (max-width: 720px) {
     .header-flex-wrapper {
-      display: block; } }
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
 
 .personal-info,
 .contact-info {
@@ -82,7 +91,7 @@ header {
       margin-top: 25px;
       margin-left: 0; }
       .name-title .position {
-        display: block;
+        display: inline-block;
         margin-top: 5px;
         font-size: 18px; } }
 
@@ -115,11 +124,13 @@ header {
       border-right: none;
       margin-top: 10px; }
       .contact-info ul {
+        display: block;
         line-height: 29px;
         padding-left: 0;
         border-top: 2px solid blue;
         margin-right: 0;
-        padding-top: 20px; }
+        padding-top: 20px;
+        background-color: red; }
       .contact-info .dribbble,
       .contact-info .linkedin {
         display: inline-block;
