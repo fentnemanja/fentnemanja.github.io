@@ -113,12 +113,12 @@ header {
     text-decoration: none;
     color: #ea4c89; }
     .contact-info .dribbble:hover {
-      text-decoration: underline; }
+      text-decoration: line-through; }
   .contact-info .linkedin {
     text-decoration: none;
     color: #0077B5; }
     .contact-info .linkedin:hover {
-      text-decoration: underline; }
+      text-decoration: line-through; }
   @media screen and (min-width: 120px) and (max-width: 720px) {
     .contact-info {
       text-align: center;
@@ -130,7 +130,7 @@ header {
         display: inline-block;
         line-height: 29px;
         padding-left: 0;
-        border-top: 2px solid blue;
+        border-top: 2px solid #134db6;
         margin-right: 0;
         padding-top: 20px; }
       .contact-info .dribbble,
