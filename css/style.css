@@ -179,9 +179,7 @@ header {
     top: 57%;
     bottom: 5px;
     left: 0px;
-    opacity: .4;
-    -webkit-animation: 1.7s ease-out 0.5s 1 slideInFromLeft;
-            animation: 1.7s ease-out 0.5s 1 slideInFromLeft; }
+    opacity: .4; }
   @media screen and (min-width: 120px) and (max-width: 720px) {
     .about {
       margin-top: 60px; } }
