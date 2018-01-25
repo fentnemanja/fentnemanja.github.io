@@ -109,6 +109,11 @@ header {
   .contact-info .mail:hover,
   .contact-info .tel:hover {
     text-decoration: underline; }
+  .contact-info .instagram {
+    text-decoration: none;
+    color: #4c68d7; }
+    .contact-info .instagram:hover {
+      text-decoration: line-through; }
   .contact-info .dribbble {
     text-decoration: none;
     color: #ea4c89; }
@@ -127,14 +132,22 @@ header {
       float: right;
       display: block; }
       .contact-info ul {
+        position: relative;
         display: inline-block;
         line-height: 29px;
         padding-left: 0;
-        border-top: 2px solid #134db6;
-        margin-right: 0;
-        padding-top: 20px; }
+        border: none;
+        margin-right: 0; }
+        .contact-info ul::before {
+          content: '';
+          display: inline-block;
+          width: 70px;
+          height: 2px;
+          background-color: #134db6;
+          margin-bottom: 14px; }
       .contact-info .dribbble,
-      .contact-info .linkedin {
+      .contact-info .linkedin,
+      .contact-info .instagram {
         display: inline-block;
         margin-top: 10px;
         text-decoration: underline; } }
