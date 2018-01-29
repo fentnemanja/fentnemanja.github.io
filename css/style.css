@@ -228,6 +228,8 @@ header {
     margin-bottom: 30px; }
     .experiences .content:last-child {
       margin-bottom: 0; }
+  .experiences a {
+    color: #134db6; }
   .experiences .sub-title,
   .experiences .text,
   .experiences .date {
