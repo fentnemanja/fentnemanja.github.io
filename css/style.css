@@ -233,7 +233,9 @@ header {
   .experiences .date {
     margin-bottom: 5px; }
   .experiences .text {
-    letter-spacing: .5px; }
+    letter-spacing: .5px;
+    font-size: 18px;
+    line-height: 27px; }
   .experiences .languages {
     margin: 0;
     margin-bottom: 40px;
