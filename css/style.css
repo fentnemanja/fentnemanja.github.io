@@ -106,6 +106,9 @@ header {
     margin-right: 35px;
     line-height: 25px;
     letter-spacing: 0.3px; }
+  .contact-info .mail a {
+    text-decoration: none;
+    color: inherit; }
   .contact-info .mail:hover,
   .contact-info .tel:hover {
     text-decoration: underline; }
@@ -173,7 +176,11 @@ header {
     width: 0; }
   100% {
     width: 100%; } }
-  .about .highlight-stripe {
+  .about .html-animation-stripe,
+  .about .css-animation-stripe,
+  .about .js-animation-stripe,
+  .about .bs-animation-stripe,
+  .about .gd-animation-stripe {
     -webkit-transition-duration: .75s;
          -o-transition-duration: .75s;
             transition-duration: .75s;
@@ -187,12 +194,31 @@ header {
     -webkit-transform-origin: left center;
         -ms-transform-origin: left center;
             transform-origin: left center;
-    width: 100%;
+    width: 0%;
     height: 12px;
     top: 57%;
     bottom: 5px;
     left: 0px;
-    opacity: .4; }
+    opacity: .4;
+    -webkit-animation: 1.5s ease-out 0.5s 1 slideInFromLeft;
+            animation: 1.5s ease-out 0.5s 1 slideInFromLeft;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards; }
+  .about .html-animation-stripe {
+    -webkit-animation-delay: 1.8s;
+            animation-delay: 1.8s; }
+  .about .css-animation-stripe {
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s; }
+  .about .js-animation-stripe {
+    -webkit-animation-delay: 2.2s;
+            animation-delay: 2.2s; }
+  .about .bs-animation-stripe {
+    -webkit-animation-delay: 2.4s;
+            animation-delay: 2.4s; }
+  .about .gd-animation-stripe {
+    -webkit-animation-delay: 2.6s;
+            animation-delay: 2.6s; }
   @media screen and (min-width: 120px) and (max-width: 720px) {
     .about {
       margin-top: 60px; } }
