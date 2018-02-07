@@ -176,11 +176,7 @@ header {
     width: 0; }
   100% {
     width: 100%; } }
-  .about .html-animation-stripe,
-  .about .css-animation-stripe,
-  .about .js-animation-stripe,
-  .about .bs-animation-stripe,
-  .about .gd-animation-stripe {
+  .about .highlight-stripe {
     -webkit-transition-duration: .75s;
          -o-transition-duration: .75s;
             transition-duration: .75s;
