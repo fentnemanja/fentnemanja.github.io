@@ -39,16 +39,22 @@ header {
 
 @-webkit-keyframes headerOpacity {
   0% {
-    margin-top: 180px;
+    -webkit-transform: translateY(180px);
+            transform: translateY(180px);
     opacity: 0; }
   100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
     opacity: 1; } }
 
 @keyframes headerOpacity {
   0% {
-    margin-top: 180px;
+    -webkit-transform: translateY(180px);
+            transform: translateY(180px);
     opacity: 0; }
   100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
     opacity: 1; } }
   @media screen and (min-width: 120px) and (max-width: 720px) {
     header {
@@ -210,16 +216,22 @@ header {
 
 @-webkit-keyframes aboutOpacity {
   0% {
-    margin-top: 180px;
+    -webkit-transform: translateY(180px);
+            transform: translateY(180px);
     opacity: 0; }
   100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
     opacity: 1; } }
 
 @keyframes aboutOpacity {
   0% {
-    margin-top: 180px;
+    -webkit-transform: translateY(180px);
+            transform: translateY(180px);
     opacity: 0; }
   100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
     opacity: 1; } }
   .about .highlight-stripe {
     -webkit-transition-duration: .75s;
