@@ -1,0 +1,98 @@
+.experiences {
+    margin-top: 100px;
+    .contents {
+        padding: 60px 0;
+    }
+    
+    .skills {
+        @include title($blue);
+    }
+    
+    .sub-title {
+        @include sub-title();
+    }
+    
+    .date {
+        @include date();
+    }
+    
+    .content {
+        margin-bottom: 30px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    a {
+        color: $blue;
+    }
+    
+    .sub-title,
+    .text,
+    .date {
+        margin-bottom: 5px;
+    }
+    
+    .text {
+        letter-spacing: .5px;
+        font-size: 18px;
+        line-height: 27px;
+    }
+    
+    .languages {
+        @include title($red);
+    }
+    
+    .left-side,
+    .right-side {
+        flex: 1;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .left-side {
+        padding-right: 40px;
+        border-right: 1px solid #cccccc;
+    }
+    
+    .right-side {
+        padding-left: 40px;
+    }
+    
+    .work {
+        @include title($orange);
+    }
+    
+    .education {
+        @include title($green);
+    }
+    
+    @include mediaquery(120px, 720px) {
+        margin-top: 40px;
+        .text {
+            font-size: 17px;
+            display: inline-block;
+            line-height: 27px;
+        }
+        
+        .left-side {
+            border-right: none;
+        }
+        
+        .right-side {
+            padding-left: 0;
+            padding-right: 40px;
+        }
+        
+        .contents {
+            padding: 45px 0;
+        }
+    }
+}
+
+.experiences-wrapper {
+    display: flex;
+    @include mediaquery(120px, 720px) {
+        flex-direction: column;
+    }
+}
