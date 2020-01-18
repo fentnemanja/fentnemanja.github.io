@@ -280,9 +280,18 @@ header {
   margin-bottom: 60px; }
 
 .experiences {
-  margin-top: 100px; }
+  opacity: 0;
+  margin-top: 100px;
+  -webkit-animation: 1.5s ease-out 5s 1 aboutOpacity;
+          animation: 1.5s ease-out 5s 1 aboutOpacity;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-duration: 1.9s;
+          animation-duration: 1.9s; }
   .experiences .contents {
-    padding: 60px 0; }
+    padding: 50px 0; }
   .experiences .skills {
     margin: 0;
     margin-bottom: 40px;
@@ -337,10 +346,10 @@ header {
     width: 100%;
     height: 100%; }
   .experiences .left-side {
-    padding-right: 40px;
-    border-right: 1px solid #cccccc; }
+    padding-right: 40px; }
   .experiences .right-side {
-    padding-left: 40px; }
+    padding-left: 40px;
+    border-left: 1px solid #cccccc; }
   .experiences .work {
     margin: 0;
     margin-bottom: 40px;
@@ -363,6 +372,16 @@ header {
     @media screen and (min-width: 120px) and (max-width: 720px) {
       .experiences .education {
         font-size: 20px; } }
+
+@keyframes aboutOpacity {
+  0% {
+    -webkit-transform: translateY(180px);
+            transform: translateY(180px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+    opacity: 1; } }
   @media screen and (min-width: 120px) and (max-width: 720px) {
     .experiences {
       margin-top: 40px; }
@@ -370,11 +389,10 @@ header {
         font-size: 17px;
         display: inline-block;
         line-height: 27px; }
-      .experiences .left-side {
-        border-right: none; }
       .experiences .right-side {
         padding-left: 0;
-        padding-right: 40px; }
+        padding-right: 40px;
+        border-left: none; }
       .experiences .contents {
         padding: 45px 0; } }
 
