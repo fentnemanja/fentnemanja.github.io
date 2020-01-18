@@ -1,0 +1,29 @@
+{
+  "name": "personalPortfolio",
+  "version": "1.0.0",
+  "description": "Portfolio Nemanja",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nemanja Fent",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^7.1.2",
+    "gulp": "latest",
+    "gulp-postcss": "^7.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-util": "latest",
+    "node-sass": "^4.13.1",
+    "postcss": "^6.0.9",
+    "postcss-flexbugs-fixes": "^3.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git"
+  },
+  "keywords": [
+    "nema"
+  ]
+}
